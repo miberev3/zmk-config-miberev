@@ -39,13 +39,13 @@
     };
 
     raise_layer {
-      bindings = <
-        &kp GRAVE   &trans      &trans                &kp UP                &kp LBRC    &kp RBRC                &kp RA(N0)          &kp LS(EQUAL)     &kp UP      &kp LS(MINUS)  &kp LS(N0)          &kp RA(RBKT)
-        &trans      &trans      &kp LEFT              &kp DOWN              &kp RIGHT   &kp LPAR                &kp RPAR            &kp LEFT          &kp DOWN    &kp RIGHT      &kp LS(COMMA)       &kp F12
-        &trans      &trans      &kp LS(N6)            &trans                &trans      &kp LBKT    &kp END     &kp RBKT            &kp LS(N9)        &trans      &trans         &kp LS(NON_US_BSLH) &trans
-                                &kp NON_US_BSLH       &trans                &trans      &trans                  &trans              &mo 3             &trans      &trans
+         bindings = <
+        &kp ESC   &kp N1    &kp N2           &kp N3   &kp N4   &kp N5                          &kp N6              &kp N7            &kp N8      &kp N9      &kp N0    &kp MINUS
+        &kp F1    &kp F2    &kp F3           &kp F4   &kp F5   &kp F6                          &kp F7              &kp F8            &kp F9      &kp F10     &kp F11   &kp F12
+        &trans    &trans    &trans           &trans   &trans   &kp CAPS    &kp END             &kp LS(NON_US_HASH) &kp NON_US_HASH   &kp EQUAL   &kp GRAVE   &trans    &trans
+                            &kp NON_US_BSLH  &trans   &trans   &trans                          &trans              &trans            &trans      &kp RCTRL
       >;
-      sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+      sensor-bindings = <&inc_dec_kp UP DOWN>;
     };
 
     adjust_layer {
